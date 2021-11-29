@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Екатерина Иванова](https://up.htmlacademy.ru/adaptive/24/user/219572).
-- Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/id252055).
+- Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
