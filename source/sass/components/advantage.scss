@@ -1,0 +1,24 @@
+.advantage {
+  color: $text-color;
+  &--reduced {
+    background-color: #eeeeee;
+  }
+}
+.advantage__description {
+  &--main {
+    background-color: $bg-blue;
+    color: $white;
+  }
+}
+.advantage__title {
+  margin: 0;
+}
+.advantage__text {
+  margin: 0;
+}
+.advantage__advice-item {
+  list-style-type: none;
+}
+.advantage__advice-list {
+  padding: 0;
+}

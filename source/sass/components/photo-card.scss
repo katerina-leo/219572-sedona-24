@@ -1,0 +1,11 @@
+.photo-card {
+  list-style-type: none;
+}
+.photo-card__author {
+  &--font {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+    color: $text-color;
+  }
+}

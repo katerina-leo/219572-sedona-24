@@ -1,0 +1,15 @@
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $bg-blue;
+  text-decoration: none;
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+  &:active {
+    background-color: $bg-blue-active;
+    color: $white-active;
+  }
+}

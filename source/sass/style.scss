@@ -1,1 +1,27 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "page-body.scss";
+
+//layout
+
+@import "./layout/header.scss";
+@import "./layout/page-main.scss";
+@import "./layout/footer.scss";
+
+//components
+
+@import "./components/main-nav.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/advantages.scss";
+@import "./components/advantage.scss";
+@import "./components/find.scss";
+@import "./components/button.scss";
+@import "./components/social.scss";
+@import "./components/copyright.scss";
+@import "./components/font.scss";
+@import "./components/description.scss";
+@import "./components/feedback-form.scss";
+@import "./components/input.scss";
+@import "./components/popup.scss";
+@import "./components/catalog.scss";
+@import "./components/photo-card.scss";
+@import "./components/player.scss";
