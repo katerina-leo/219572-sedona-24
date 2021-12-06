@@ -1,15 +1,19 @@
 .main-nav {
   background-color: $bg-blue;
 }
+
 .main-nav__toggle {
   background-color: $bg-blue;
+
   &:hover {
     background-color: $bg-blue-hover;
   }
+
   &:active {
     background-color: $bg-blue-active;
   }
 }
+
 .main-nav__item {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -19,6 +23,7 @@
     border-top: none;
   }
 }
+
 .main-nav__link {
   color: $white;
   font-size: 18px;
@@ -30,6 +35,7 @@
   &:hover {
     background-color: $bg-blue-hover;
   }
+
   &:active {
     background-color: $bg-blue-active;
     color: $white-active;

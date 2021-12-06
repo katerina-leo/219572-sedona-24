@@ -3,11 +3,14 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
 .copyright-logo {
   fill: $black;
+
   &:hover {
     fill: $bg-blue;
   }
+
   &:active {
     fill: $black-active;
   }
