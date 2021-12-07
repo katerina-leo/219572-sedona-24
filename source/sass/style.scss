@@ -1,14 +1,12 @@
 @import "variables.scss";
-@import "page-body.scss";
-
-//layout
-
-@import "./layout/header.scss";
-@import "./layout/page-main.scss";
-@import "./layout/footer.scss";
+@import "global.scss";
+@import "fonts.scss";
 
 //components
 
+@import "./components/page-header.scss";
+@import "./components/page-main.scss";
+@import "./components/page-footer.scss";
 @import "./components/main-nav.scss";
 @import "./components/visually-hidden.scss";
 @import "./components/advantages.scss";
@@ -17,7 +15,6 @@
 @import "./components/button.scss";
 @import "./components/social.scss";
 @import "./components/copyright.scss";
-@import "./components/font.scss";
 @import "./components/description.scss";
 @import "./components/feedback-form.scss";
 @import "./components/input.scss";

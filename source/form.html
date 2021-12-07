@@ -40,34 +40,37 @@
   </header>
   <main class="page-main">
     <div class="page-main__header description">
-      <h1 class="description__title font--title">Оставьте свой отзыв</h1>
+      <h1 class="description__title">Оставьте свой отзыв</h1>
       <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
     <form class="feedback-form" method="post" action="https://htmlacademy.ru">
+      <!-- form name -->
       <fieldset class="feedback-form__list feedback-form__list--name">
-        <legend class="feedback-form__title font--title">Представьтесь:</legend>
-        <label class="feedback-form__label" for="first-name">Имя<sup>*</sup>:</label>
+        <legend class="feedback-form__title">Представьтесь:</legend>
+        <label class="feedback-form__label feedback-form__label--font" for="first-name">Имя<sup>*</sup>:</label>
         <input class="feedback-form__input input" type="text" id="first-name" placeholder="Петр" required>
         <br>
-        <label class="feedback-form__label" for="surname">Фамилия<sup>*</sup>:</label>
+        <label class="feedback-form__label feedback-form__label--font" for="surname">Фамилия<sup>*</sup>:</label>
         <input class="feedback-form__input input" type="text" id="surname" placeholder="Иванов" required>
         <br>
-        <label class="feedback-form__label" for="patronymic">Отчество:</label>
+        <label class="feedback-form__label feedback-form__label--font" for="patronymic">Отчество:</label>
         <input class="feedback-form__input input" type="text" id="patronymic" placeholder="Александрович">
       </fieldset>
+      <!-- form contacts -->
       <fieldset class="feedback-form__list feedback-form__list--contacts">
-        <legend class="feedback-form__title font--title">Контактная информация:</legend>
-        <label class="feedback-form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-        <div class="feedback-form__input--phone">
+        <legend class="feedback-form__title">Контактная информация:</legend>
+        <label class="feedback-form__label feedback-form__label--font" for="phone">Контактный телефон<sup>*</sup>:</label>
+        <div class="feedback-form__group feedback-form__group--phone">
           <input class="feedback-form__input input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
         </div>
-        <label class="feedback-form__label" for="email">Электронная почта<sup>*</sup>:</label>
-        <div class=" feedback-form__input--email">
+        <label class="feedback-form__label feedback-form__label--font" for="email">Электронная почта<sup>*</sup>:</label>
+        <div class="feedback-form__group feedback-form__group--email">
           <input class="feedback-form__input input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </div>
       </fieldset>
+      <!-- form radio -->
       <fieldset class="feedback-form__list feedback-form__list--feeling">
-        <legend class="feedback-form__title font--title">Ваше общее впечатление:</legend>
+        <legend class="feedback-form__title">Ваше общее впечатление:</legend>
         <input class="feedback-form__input  feedback-form__input-radio" type="radio" id="radio-positive" name="radio"  checked>
         <label class="feedback-form__label feedback-form__label--radio"  for="radio-negative">Скорее положительное</label>
         <input class=" feedback-form__input  feedback-form__input-radio" type="radio" id="radio-negative" name="radio"  >
@@ -75,8 +78,9 @@
         <input class="feedback-form__input  feedback-form__input-radio" type="radio" id="radio-difficult" name="radio">
         <label class="feedback-form__label feedback-form__label--radio" for="radio-difficult">Затрудняюсь ответить</label>
       </fieldset>
+      <!-- form checkbox -->
       <fieldset class="feedback-form__list feedback-form__list--place">
-        <legend class="feedback-form__title font--title">Посещенные достопримечательности:</legend>
+        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
         <input class="feedback-form__input input feedback-form__input-checkbox" type="checkbox" id="bridge" name="place" checked>
         <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
         <input class="feedback-form__input input feedback-form__input-checkbox" type="checkbox" id="mountain" name="place" checked>
@@ -86,8 +90,9 @@
         <input class="feedback-form__input input feedback-form__input-checkbox" type="checkbox" id="rocks" name="place">
         <label class="feedback-form__label feedback-form__label--checkbox" for="rocks">Красные скалы</label>
       </fieldset>
+      <!-- form textarea -->
       <fieldset class="feedback-form__list feedback-form__list--description">
-        <legend class="feedback-form__title font--title">Опишите свои эмоции:</legend>
+        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
         <label class="" for="description"></label>
         <textarea class="feedback-form__textarea" id="description" name="description"
           placeholder="Опишите подробно все свои восторги" rows="5"></textarea>
@@ -96,13 +101,11 @@
         <button class="feedback-form__submit button" type="submit">Опубликовать</button>
         <small class="feedback-form__small">* — обязательные поля</small>
       </fieldset>
-
     </form>
-
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__hashtag hashtag">#visitSEDONA</div>
+      <div class="page-footer__hashtag">#visitSEDONA</div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -125,14 +128,14 @@
   </footer>
   <section class="popup popup--error">
     <div class="popup__error">
-      <h2 class="popup__title font--title">Что-то пошло не так!</h2>
+      <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
     <button class="popup__button button button--popup" type="button">OK</button>
   </section>
   <section class="popup popup--success">
     <div class="popup__success">
-      <h2 class="popup__title font--title">Что-то пошло не так!</h2>
+      <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
     <button  class="popup__button button button--popup" type="button">Закрыть окно</button>

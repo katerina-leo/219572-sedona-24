@@ -1,17 +1,30 @@
 .feedback-form {
-  color: $text-color;
+  color: $black;
 }
 
 .feedback-form__list {
   border: none;
 }
 
-.feedback-form__label {
-  text-transform: none;
+.feedback-form__title {
   font-size: 18px;
   line-height: 26px;
+  font-weight: bold;
+}
+
+.feedback-form__label {
+  font-size: 18px;
   color: $black;
   font-weight: bold;
+  text-transform: none;
+  line-height: 26px;
+
+  &--font {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: normal;
+  }
 }
 
 .feedback-form__input-radio {
