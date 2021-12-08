@@ -1,17 +1,17 @@
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
+@import "visually-hidden.scss";
 
 //components
-
+@import "./components/page.scss";
 @import "./components/page-header.scss";
 @import "./components/page-main.scss";
 @import "./components/page-footer.scss";
 @import "./components/main-nav.scss";
-@import "./components/visually-hidden.scss";
 @import "./components/advantages.scss";
 @import "./components/advantage.scss";
-@import "./components/find.scss";
+@import "./components/find-hotel.scss";
 @import "./components/button.scss";
 @import "./components/social.scss";
 @import "./components/copyright.scss";
