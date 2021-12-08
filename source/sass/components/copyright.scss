@@ -1,0 +1,16 @@
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__logo {
+  fill: $black;
+
+  &:hover {
+    fill: $bg-blue;
+  }
+
+  &:active {
+    fill: $black-active;
+  }
+}

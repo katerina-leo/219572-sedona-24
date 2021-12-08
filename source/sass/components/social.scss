@@ -1,0 +1,21 @@
+.social__list {
+  padding: 0;
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__link {
+  background-color: $bg-blue;
+  color: $white;
+
+  &:hover {
+    background-color: $bg-blue-hover;
+  }
+
+  &:active {
+    background-color: $bg-blue-active;
+    color: $white-active;
+  }
+}

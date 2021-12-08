@@ -1,0 +1,21 @@
+.input {
+  border: none;
+  background-color: $bg-input-color;
+
+  &:hover {
+    background-color: $bg-input-color-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $bg-input-color;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: none;
+    color: $black;
+  }
+}

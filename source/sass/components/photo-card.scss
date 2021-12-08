@@ -1,0 +1,18 @@
+.photo-card {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo-card__title {
+  &--font {
+    text-transform: uppercase;
+  }
+}
+
+.photo-card__author {
+  &--font {
+    color: $text-color;
+  }
+}
