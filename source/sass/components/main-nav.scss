@@ -1,26 +1,76 @@
 .main-nav {
+  position: absolute;
+  width: 100%;
   background-color: $bg-blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding: 10px;
+  }
 }
 
-.main-nav__toggle {
+.main-nav__wrapper {
+  z-index: 1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
   background-color: $bg-blue;
 
-  &:hover {
-    background-color: $bg-blue-hover;
-  }
-
-  &:active {
-    background-color: $bg-blue-active;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $white;
   }
 }
 
 .main-nav__item {
+  width: 100%;
+  text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-  list-style-type: none;
+  padding: 10px 0 5px;
 
   &:first-child {
     border-top: none;
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-blue-hover;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
+  }
+
+  &:active {
+    background-color: $bg-blue-active;
+    color: $white-active;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 153px;
   }
 }
 
@@ -30,13 +80,27 @@
   line-height: 40px;
   text-transform: uppercase;
   font-weight: bold;
-
-  &:hover {
-    background-color: $bg-blue-hover;
-  }
+  padding: 15px 10px;
 
   &:active {
-    background-color: $bg-blue-active;
     color: $white-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+
+    &--current {
+      color: $current-color;
+    }
+
+    &:hover {
+      color: $bg-blue;
+    }
+
+    &:active {
+      color: $black-active;
+    }
   }
 }

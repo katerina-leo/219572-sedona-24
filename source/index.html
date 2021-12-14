@@ -2,22 +2,23 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a  class="page-header__logo" href="#">
+    <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" src="img/logotype-mobile.svg.svg"  width="102" height="84" alt="Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visualy-hidden">Открыть меню</span>
+    <nav class="page-header__nav main-nav">
+      <button class="page-header__toggle main-nav__toggle main-nav__toggle--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a href="index.html" class="main-nav__link main-nav__link--current">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">Фото и видео</a>
@@ -31,6 +32,11 @@
         </ul>
       </div>
     </nav>
+    <div class="page-header__container">
+      <button class="page-header__toggle " type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <picture class="page-header__inner">
       <img class = "page-header__inner-image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону">
     </picture>
@@ -43,7 +49,7 @@
     <section class="advantages">
       <h2 class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       <ol class="advantages__list">
-        <li class="advantages__item advantage">
+        <li class="advantages__item advantage advantage--top">
           <div class="advantage__description advantage__description--main">
             <h3 class="advantage__title">Настоящий городок</h3>
             <span class="advantage__number">— №1 —</span>
@@ -67,7 +73,7 @@
             </li>
           </ul>
         </li>
-        <li class="advantages__item advantage">
+        <li class="advantages__item advantage advantage--reverse">
           <div class="advantage__description advantage__description--main">
             <h3 class="advantage__title">Там есть Мост дьявола</h3>
             <span class="advantage__number">— №2 —</span>
@@ -78,21 +84,21 @@
           </picture>
         </li>
         <li class="advantages__item advantage advantage--reduced">
-          <div class="advantage__description">
+          <div class="advantage__description advantage__description--reduced">
             <h3 class="advantage__title">Небольшая площадь</h3>
             <span class="advantage__number">— №3 —</span>
             <p class="advantage__text">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item advantage advantage--reduced">
-          <div class="advantage__description">
+          <div class="advantage__description advantage__description--reduced">
             <h3 class="advantage__title">Красивая дорога</h3>
             <span class="advantage__number">— №4 —</span>
             <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item advantage advantage--reduced">
-          <div class="advantage__description">
+          <div class="advantage__description advantage__description--reduced">
             <h3 class="advantage__title">Мало туристов</h3>
             <span class="advantage__number">— №5 —</span>
             <p class="advantage__text">Большинство едет в гранд каньон и толпится там</p>
@@ -103,7 +109,7 @@
     <section class="find-hotel">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <b class="find-hotel__title">Заинтересовались?</b>
-      <p class="find-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="find-hotel__description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
       <a class="button find-hotel__button" href="#">Найти гостиницу</a>
     </section>
     <section class="map">

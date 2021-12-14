@@ -3,7 +3,24 @@
 }
 
 .page-main__slogan {
+  display: block;
+  margin: 0px auto;
+  margin-top: 32px;
+  margin-bottom: 39px;
+  max-width: 285px;
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    margin-top: 44px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 42px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
