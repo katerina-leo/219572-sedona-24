@@ -1,8 +1,35 @@
 .page-header {
+  position: relative;
   background-color: $white;
+}
+
+.page-header__logo {
+  display: block;
+  height: 56px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+  }
 }
 
 .page-header__inner {
   display: block;
   background: $bg-blue url("../img/header__inner-image.jpg") no-repeat center;
+  height: 389px;
+}
+
+.page-header__inner-image {
+  padding-top: 90px;
+  margin: auto;
+  display: block;
 }

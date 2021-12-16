@@ -3,3 +3,26 @@
   line-height: 26px;
   font-weight: bold;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 360px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 992px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+}

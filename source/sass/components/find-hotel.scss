@@ -1,8 +1,38 @@
+.find-hotel {
+  text-align: center;
+}
+
 .find-hotel__title {
+  display: block;
+  margin: 33px auto;
   font-size: 21px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin: 58px auto;
+  }
 }
 
 .find-hotel__description {
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 37px;
+    width: 435px;
+  }
+}
+
+.find-hotel__button {
+  padding: 14px 32px 17px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
