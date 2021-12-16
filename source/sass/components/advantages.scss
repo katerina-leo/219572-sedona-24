@@ -3,7 +3,7 @@
   line-height: 26px;
   font-weight: normal;
   color: $text-color;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-bottom: 11px;
   text-align: center;
   max-width: 285px;
@@ -19,8 +19,8 @@
 }
 
 .advantages__list {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,4 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.advantages__item {
 }

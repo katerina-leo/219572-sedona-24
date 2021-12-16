@@ -1,4 +1,5 @@
 .page__body {
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -7,4 +8,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $black;
+}
+
+.page__container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
 }

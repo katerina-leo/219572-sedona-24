@@ -1,20 +1,10 @@
 .main-nav {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: $bg-blue;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 10px;
-  }
-}
-
-.main-nav__wrapper {
-  z-index: 1;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    z-index: 0;
   }
 }
 
@@ -22,15 +12,65 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   background-color: $bg-blue;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: $white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+
+.main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border: none;
+    top: 17px;
+    right: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed {
+    .main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      background: url("../img/icon-menu.svg") center no-repeat;
+    }
+  }
+
+  .main-nav--opened {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+
+    .main-nav__toggle {
+      background: url("../img/icon-cross.svg") center no-repeat;
+    }
+  }
+
+  .main-nav--no-js {
+    .main-nav__list {
+      display: block;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
   }
 }
 

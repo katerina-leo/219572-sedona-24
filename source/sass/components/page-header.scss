@@ -1,40 +1,24 @@
 .page-header {
+  position: relative;
   background-color: $white;
 }
 
 .page-header__logo {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  // margin-left: -51px;
-  transform: translateX(-50%);
+  display: block;
+  height: 56px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 96px;
-  }
-}
-
-.page-header__container {
-  height: 56px;
-}
-
-.page-header__toggle {
-  @media (max-width: $mobile-width-only) {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    border: none;
-    top: 17px;
-    right: 17px;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

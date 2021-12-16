@@ -4,7 +4,7 @@
 
 .page-main__slogan {
   display: block;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 39px;
   max-width: 285px;
@@ -20,6 +20,7 @@
     line-height: 26px;
     margin-bottom: 42px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 55px;
   }
