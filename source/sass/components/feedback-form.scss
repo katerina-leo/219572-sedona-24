@@ -234,7 +234,9 @@
 }
 
 .feedback-form__small {
-  display: none;
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
