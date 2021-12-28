@@ -51,6 +51,14 @@
 
     .main-nav__toggle {
       background: url("../img/icon-menu.svg") center no-repeat;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -58,9 +66,16 @@
     position: absolute;
     top: 0;
     z-index: 2;
+  }
+  .main-nav--opened .main-nav__toggle {
+    background: url("../img/icon-cross.svg") center no-repeat;
 
-    .main-nav__toggle {
-      background: url("../img/icon-cross.svg") center no-repeat;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
