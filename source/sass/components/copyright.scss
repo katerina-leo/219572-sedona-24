@@ -1,9 +1,21 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
+  margin-right: 10px;
+  margin-top: -7px;
 }
 
-.copyright__logo {
+.copyright__link {
+  position: relative;
+}
+
+.copyright__link-icon {
   fill: $black;
 
   &:hover {
