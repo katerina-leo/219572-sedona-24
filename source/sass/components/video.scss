@@ -1,0 +1,28 @@
+.video {
+  padding-top: 29px;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 44px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+  }
+}
+
+.video__header {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 81px;
+  }
+}
+
+.video__header .description__title {
+  margin-bottom: 34px;
+}

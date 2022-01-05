@@ -1,17 +1,17 @@
 .description {
-  max-width: 460px;
   text-align: center;
-  margin: 0 auto 33px;
-  padding: 0 10px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 53px;
+    max-width: 445px;
   }
 }
 
 .description__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -19,11 +19,19 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 33px;
+    }
+  }
 }
 
 .description__text {
   margin: 0;
-  margin-bottom: 48px;
+  // margin-bottom: 37px;
   color: $text-color;
   line-height: 24px;
+  // padding-left: 10px;
+  // padding-right: 10px;
 }
