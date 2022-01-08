@@ -7,6 +7,12 @@
     margin-bottom: 53px;
     max-width: 445px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 113px;
+    margin-bottom: 62px;
+    max-width: 445px;
+  }
 }
 
 .description__title {

@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>Седона - форма отзыва</title>
 </head>
@@ -36,12 +40,15 @@
       </nav>
       <!-- main-nav -->
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" >
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        </picture>
       </a>
-      <picture class="page-header__inner">
-        <img class="page-header__inner-image" src="img/sedona.svg" width="229" height="39"
-          alt="Sedona">
-      </picture>
+      <section class="intro intro--other">
+        <img class="intro__text intro__text--other" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+      </section>
     </header>
     <main class="page-main">
       <div class="page-main__header description">

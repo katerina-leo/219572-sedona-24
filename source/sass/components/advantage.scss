@@ -65,14 +65,28 @@
   }
 }
 
-.advantage__image {
-  width: 320px;
-  height: 260px;
+.advantage__image-container {
   margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  height: 260px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    height: 256px;
     flex-basis: 66.67%;
   }
+}
+
+.advantage__content-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  // @media (min-width: $tablet-width) {
+  //   flex-basis: 66.67%;
+  // }
 }
 
 .advantage__title {
@@ -211,12 +225,12 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .advantage__advice-text {
   margin: 0;
-}
-
-.advantage__content-photo {
-  display: block;
 }

@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -35,14 +39,22 @@
       </nav>
       <!-- main-nav -->
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" >
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg"
+            width="102" height="84" alt="Седона">
+        </picture>
+
       </a>
-      <picture class="page-header__inner">
-        <img class = "page-header__inner-image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону">
-      </picture>
+      <section class="intro intro--index">
+        <img class="intro__text" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону">
+      </section>
+      <!-- bg-image -->
+
     </header>
     <main class="page-main">
-      <div class="page-main__header">
+      <div class="page-main__header page-main__header--index">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
         <b class="page-main__slogan">Седона — небольшой городок&nbsp;в Аризоне, заслуживающий большего!</b>
       </div>
@@ -55,9 +67,14 @@
               <span class="advantage__number">— №1 —</span>
               <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <picture class="advantage__image">
-              <img class="advantage__content-photo" src="img/photo-city.jpg"   alt="Фото города">
-            </picture>
+            <div class="advantage__image-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop.jpg 1x, img/advantages-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages-1-tablet.jpg 1x, img/advantages-1-tablet@2x.jpg 2x">
+                <img class="advantage__content-photo" src="img/advantages-1-mobile.jpg" srcset="img/advantages-1-mobile@2x.jpg"
+                  alt="Фото города">
+              </picture>
+            </div>
             <ul class="advantage__advice-list">
               <li class="advantage__advice-item advantage__advice-item--house">
                 <h4 class="advantage__advice-title">Жилье</h4>
@@ -73,15 +90,24 @@
               </li>
             </ul>
           </li>
+
+          <!-- advantage-1 -->
+
           <li class="advantages__item advantage advantage--reverse">
             <div class="advantage__description advantage__description--main advantage__description--reverse">
               <h3 class="advantage__title">Там есть <br>Мост дьявола</h3>
               <span class="advantage__number">— №2 —</span>
               <p class="advantage__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <picture class="advantage__image">
-              <img class="advantage__content-photo" src="img/photo-bridge.jpg" alt="Фото - мост дьявола">
-            </picture>
+            <div class="advantage__image-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantages-2-tablet.jpg 1x, img/advantages-2-tablet@2x.jpg 2x">
+                <img class="advantage__content-photo" src="img/advantages-2-mobile.jpg" srcset="img/advantages-2-mobile@2x.jpg"
+                  alt="Фото - мост дьявола">
+              </picture>
+            </div>
+
           </li>
           <li class="advantages__item advantage advantage--reduced">
               <h3 class="advantage__title">Небольшая <br> площадь</h3>

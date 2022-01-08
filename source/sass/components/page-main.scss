@@ -2,12 +2,18 @@
   margin: auto;
 }
 
+.page-main__header {
+  margin-top: 32px;
+}
+
 .page-main__slogan {
   display: block;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 31px;
-  max-width: 280px;
+  padding-left: 18px;
+  padding-right: 18px;
+
   padding: 0 15px;
   text-align: center;
   font-size: 18px;

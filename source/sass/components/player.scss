@@ -1,6 +1,10 @@
 .player {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 648px;
+
     margin: 0 auto;
     position: relative;
   }
@@ -10,11 +14,25 @@
   }
 }
 
+.player__image-wrapper {
+  width: 320px;
+  height: 201px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    height: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .player__image {
   display: block;
-  // height: 100%;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .player__interface {
@@ -78,6 +96,10 @@
     box-sizing: border-box;
     left: 74px;
     top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
