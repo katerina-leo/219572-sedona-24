@@ -8,4 +8,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
