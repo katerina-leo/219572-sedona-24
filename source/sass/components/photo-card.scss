@@ -18,34 +18,40 @@
 }
 
 .photo-card__link {
-  @media (min-width: $desktop-width) {
-    grid-area: 1/1/3/2;
-  }
-}
-
-.photo-card__img {
   display: block;
-  // width: 100%;
+  margin: 0 auto;
+  min-width: 280px;
+  height: 280px;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
-    width: 324px;
+    min-width: 324px;
     height: 267px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-area: 1/1/3/2; //grid-area
     width: 400px;
   }
 
   &--first {
     @media (min-width: $tablet-width) {
-      width: 648px;
+      min-width: 648px;
       height: 400px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      min-width: 1200px;
       height: 400px;
     }
   }
+}
+
+.photo-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .photo-card__wrapper {
@@ -72,7 +78,9 @@
 }
 
 .photo-card:nth-of-type(2n + 3) .photo-card__wrapper {
-  background-color: #eaeaea;
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $black-active;
