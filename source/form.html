@@ -16,7 +16,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="page-header__nav main-nav main-nav--closed main-nav--no-js">
-        <!-- class="main-nav--opened" - состояние  при открытом меню -->
+        <!-- main-nav--opened - состояние  при открытом меню -->
         <button class="page-header__toggle main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -47,12 +47,13 @@
         </picture>
       </a>
       <section class="intro intro--other">
+        <h1 class="visually-hidden">Страница отзыва</h1>
         <img class="intro__text intro__text--other" src="img/sedona.svg" width="229" height="39" alt="Sedona">
       </section>
     </header>
     <main class="page-main">
       <div class="page-main__header description">
-        <h1 class="description__title">Оставьте свой отзыв</h1>
+        <h2 class="description__title">Оставьте свой отзыв</h2>
         <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="feedback-form" method="post" action="https://htmlacademy.ru">
@@ -92,23 +93,29 @@
             </div>
           </div>
         </fieldset>
+
         <!-- form radio -->
         <fieldset class="feedback-form__list feedback-form__list--feeling">
           <legend class="feedback-form__title">
             <span class="feedback-form__stricked-text feedback-form__stricked-text--feeling ">Ваше общее впечатление:</span>
           </legend>
-          <div class="feedback-form__wrapper feedback-form__wrapper--feeling">
-            <input class="feedback-form__input  feedback-form__input-radio" type="radio" id="radio-positive" name="radio"  checked>
-            <label class="feedback-form__label feedback-form__label--radio"  for="radio-negative">Скорее положительное</label>
-          </div>
-          <div class="feedback-form__wrapper feedback-form__wrapper--feeling">
-            <input class=" feedback-form__input  feedback-form__input-radio" type="radio" id="radio-negative" name="radio"  >
-            <label class="feedback-form__label feedback-form__label--radio" for="radio-negative">Скорее отрицательное</label>
-          </div>
-          <div class="feedback-form__wrapper feedback-form__wrapper--feeling">
-            <input class="feedback-form__input  feedback-form__input-radio" type="radio" id="radio-difficult" name="radio">
-            <label class="feedback-form__label feedback-form__label--radio" for="radio-difficult">Затрудняюсь ответить</label>
-          </div>
+          <label class="feedback-form__wrapper feedback-form__wrapper--feeling" for="radio-positive">
+            <input class="feedback-form__input feedback-form__input-radio visually-hidden" type="radio" id="radio-positive" name="radio"  checked>
+            <span class="feedback-form__radio-icon"></span>
+            <span class="feedback-form__label feedback-form__label--radio"  >Скорее положительное
+              </span>
+          </label>
+
+          <label class="feedback-form__wrapper feedback-form__wrapper--feeling" for="radio-negative">
+            <input class="feedback-form__input  feedback-form__input-radio visually-hidden" type="radio" id="radio-negative" name="radio">
+            <span class="feedback-form__radio-icon"></span>
+            <span class="feedback-form__label feedback-form__label--radio" >Скорее отрицательное</span>
+          </label>
+          <label class="feedback-form__wrapper feedback-form__wrapper--feeling" for="radio-difficult">
+            <input class="feedback-form__input  feedback-form__input-radio visually-hidden" type="radio" id="radio-difficult" name="radio">
+            <span class="feedback-form__radio-icon"></span>
+            <span class="feedback-form__label feedback-form__label--radio" >Затрудняюсь ответить</span>
+          </label>
         </fieldset>
         <!-- form checkbox -->
         <fieldset class="feedback-form__list feedback-form__list--place">
