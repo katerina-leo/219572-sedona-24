@@ -27,7 +27,7 @@
     display: block;
     content: "";
     position: absolute;
-    background: url(../img/like-icon.svg) no-repeat center;
+    background: url("../img/like-icon.svg") no-repeat center;
     width: 23px;
     height: 21px;
 
@@ -37,7 +37,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url(../img/like-icon-light.svg);
+      background-image: url("../img/like-icon-light.svg");
     }
   }
 }

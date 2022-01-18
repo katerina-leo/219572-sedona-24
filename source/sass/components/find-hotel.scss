@@ -1,6 +1,6 @@
 .find-hotel {
   text-align: center;
-  padding: 33px 20px 0;
+  padding: 31px 20px 0;
 }
 
 .find-hotel__title {
@@ -18,12 +18,17 @@
 
 .find-hotel__description {
   line-height: 24px;
-  margin: 0;
+  margin: auto;
   margin-bottom: 29px;
+  max-width: 435px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 37px;
+    margin: 0 auto 43px;
     width: 435px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 

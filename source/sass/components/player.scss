@@ -23,6 +23,7 @@
     min-width: 648px;
     height: 500px;
   }
+
   @media (min-width: $desktop-width) {
     width: 800px;
   }
@@ -177,6 +178,7 @@
       opacity: 0.3;
     }
   }
+
   @media (min-width: $tablet-width) {
     fill: $white;
 

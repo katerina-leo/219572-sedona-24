@@ -9,6 +9,10 @@
   line-height: 26px;
   margin-right: 12px;
   margin-top: -6px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .copyright__link {
