@@ -9,9 +9,36 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 113px;
     margin-bottom: 62px;
     max-width: 445px;
+  }
+
+  &--form {
+    padding-top: 35px;
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 61px;
+      margin-bottom: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 113px;
+      margin-bottom: 62px;
+    }
+  }
+
+  &--catalog {
+    padding-top: 32px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 102px;
+      margin-bottom: 54px;
+    }
   }
 }
 

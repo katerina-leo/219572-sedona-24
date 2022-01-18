@@ -11,6 +11,10 @@
   &--first {
     padding-top: 25px;
 
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+    }
+
     @media (min-width: $desktop-width) {
       padding-top: 28px;
     }
@@ -125,11 +129,5 @@
 .photo-card__likes {
   @media (min-width: $desktop-width) {
     color: $white;
-  }
-}
-
-.photo-card--first {
-  @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
   }
 }
