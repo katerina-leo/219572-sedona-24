@@ -1,7 +1,7 @@
 .video {
-  padding-top: 29px;
-  border-top: 1px solid #e5e5e5;
-  margin-bottom: 44px;
+  padding-top: 32px;
+  border-top: 1px solid $gray-color;
+  margin-bottom: 40px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -10,19 +10,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 83px;
+    margin-bottom: 86px;
   }
 }
 
 .video__header {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 4px;
+  max-width: 445px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 81px;
+    margin-bottom: 75px;
   }
 }
 
 .video__header .description__title {
-  margin-bottom: 34px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }

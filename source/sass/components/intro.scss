@@ -1,16 +1,16 @@
 .intro {
   box-sizing: border-box;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 13px;
   background-color: $bg-blue;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/bg-intro-index.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop@2x.jpg");
+    background-image: url("../img/bg-intro-index@2x.jpg");
   }
 
   &::after {
@@ -18,7 +18,7 @@
     background-image: url("../img/intro-triangle.svg");
     height: 57px;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
     position: absolute;
     left: 0;
     background-repeat: no-repeat;
@@ -39,10 +39,10 @@
     @media (max-width: $mobile-width-only) {
       min-height: 157px;
       background-position-y: bottom;
-      background-image: url("../img/back-mobile-other.jpg");
+      background-image: url("../img/bg-intro-other.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-mobile-other@2x.jpg");
+        background-image: url("../img/bg-intro-other@2x.jpg");
       }
     }
 

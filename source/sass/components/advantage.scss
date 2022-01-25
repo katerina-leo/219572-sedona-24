@@ -1,6 +1,8 @@
 .advantage {
+  padding: 0;
   color: $text-color;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,14 +12,14 @@
 
     &--reverse {
       flex-direction: row-reverse;
+      flex-wrap: nowrap;
     }
   }
 
   &--reduced {
-    box-sizing: border-box;
     text-align: center;
     max-width: 280px;
-    border-top: 1px solid #d6d6d6;
+    border-top: 1px solid $border-gray;
     padding: 25px 15px;
 
     @media (min-width: $tablet-width) {
@@ -26,7 +28,7 @@
       box-sizing: border-box;
       min-width: 256px;
       max-width: 33.33%;
-      padding: 42px 40px 42px 43px;
+      padding: 42px 40px;
       border-top: none;
     }
 
@@ -37,20 +39,16 @@
 }
 
 .advantage__description {
+  box-sizing: border-box;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    padding: 40px 32px 44px;
-  }
 
   @media (min-width: $desktop-width) {
     padding-top: 48px;
   }
 
-  &--main {
+  &--have-image {
     background-color: $bg-blue;
     color: $white;
     padding-top: 72px;
@@ -72,7 +70,7 @@
     padding-bottom: 36px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 42px;
+      padding-top: 44px;
     }
 
     @media (min-width: $desktop-width) {
@@ -84,6 +82,7 @@
 .advantage__image-container {
   margin: 0 auto;
   padding: 0;
+  flex-grow: 1;
   min-width: 320px;
   height: 260px;
   overflow: hidden;
@@ -97,17 +96,14 @@
 .advantage__content-photo {
   display: block;
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  height: auto;
   object-fit: cover;
-
-  // @media (min-width: $tablet-width) {
-  //   flex-basis: 66.67%;
-  // }
 }
 
 .advantage__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -120,15 +116,16 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 14px;
   }
 }
 
 .advantage__number {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -141,14 +138,8 @@
   }
 }
 
-.advantage__text-nowrap {
-  @media (min-width: $tablet-width) {
-    white-space: nowrap;
-  }
-}
-
 .advantage__advice-list {
-  padding: 34px 21px 10px;
+  padding: 36px 21px 10px;
   background-color: $white;
   list-style-type: none;
   display: grid;
@@ -173,13 +164,13 @@
     text-align: center;
     margin: 0 auto;
     max-width: 33.33%;
-    padding: 158px 35px 59px 35px;
+    padding: 158px 35px 59px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 400px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
     margin-bottom: 25px;
   }
 
@@ -224,7 +215,7 @@
     @media (min-width: $tablet-width) {
       width: 76px;
       height: 78px;
-      top: 60px;
+      top: 55px;
       background: url("../img/icon-gift.svg") center no-repeat;
       left: 50%;
       transform: translate(-50%);
@@ -243,7 +234,7 @@
     @media (min-width: $tablet-width) {
       width: 78px;
       height: 78px;
-      top: 60px;
+      top: 56px;
       background: url("../img/icon-burger.svg") center no-repeat;
       left: 50%;
       transform: translate(-50%);
@@ -260,15 +251,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
+    font-size: 21px;
   }
 }
 
 .advantage__advice-text {
   margin: 0;
-}
 
-.advantage__advice-nowrap {
-  @media (min-width: $tablet-width) {
-    white-space: nowrap;
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
   }
 }

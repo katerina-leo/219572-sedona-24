@@ -2,17 +2,13 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-}
-
-.page-footer__wrapper {
   margin: 0 auto;
   height: 233px;
   text-align: center;
   padding-top: 38px;
 
   @media (min-width: $tablet-width) {
-    min-width: 648px;
-    margin: 0 auto;
+    // min-width: 648px;
     display: flex;
     flex-direction: row;
     align-items: center;

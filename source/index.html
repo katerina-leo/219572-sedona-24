@@ -8,14 +8,14 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page__body">
   <div class="container">
     <header class="page-header">
-
       <nav class="page-header__nav main-nav main-nav--closed main-nav--no-js">
-          <!-- main-nav--opened - состояние  при открытом меню -->
         <button class="page-header__toggle main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -38,14 +38,13 @@
         </div>
       </nav>
       <!-- main-nav -->
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" >
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
           <img class="page-header__logo-image" src="img/logotype-mobile.svg"
             width="102" height="84" alt="Седона">
         </picture>
-
       </a>
       <div class="intro intro--index">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
@@ -56,19 +55,23 @@
     </header>
     <main class="page-main">
       <div class="page-main__header page-main__header--index">
-        <b class="page-main__slogan">Седона — небольшой городок&nbsp;в Аризоне, заслуживающий большего!</b>
+        <b class="page-main__slogan">Седона &mdash; небольшой городок&nbsp;в Аризоне, заслуживающий большего!</b>
       </div>
       <section class="advantages">
         <h2 class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <ol class="advantages__list">
-          <li class="advantages__item advantage advantage--top">
-            <div class="advantage__description advantage__description--main">
-              <h3 class="advantage__title">Настоящий <br> городок</h3>
+          <li class="advantages__item advantage">
+            <div class="advantage__description advantage__description--have-image">
+              <h3 class="advantage__title">Настоящий&nbsp; <br> городок</h3>
               <span class="advantage__number">— №1 —</span>
-              <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantage__text">Седона не аттракцион для туристов, <span class="nowrap nowrap--desktop" >там течет своя жизнь</span></p>
             </div>
             <div class="advantage__image-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/advantages-1-desktop.webp 1x, img/advantages-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-1-tablet.webp 1x, img/advantages-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantages-1-mobile.webp 1x, img/advantages-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop.jpg 1x, img/advantages-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advantages-1-tablet.jpg 1x, img/advantages-1-tablet@2x.jpg 2x">
                 <img class="advantage__content-photo" src="img/advantages-1-mobile.jpg" srcset="img/advantages-1-mobile@2x.jpg"
@@ -82,11 +85,11 @@
               </li>
               <li class="advantage__advice-item advantage__advice-item--souvenirs">
                 <h4 class="advantage__advice-title">Сувениры</h4>
-                <p class="advantage__advice-text">Не только китайского, но <span class="advantage__advice-nowrap">и местного производства!</span></p>
+                <p class="advantage__advice-text">Не только китайского, <span class="nowrap nowrap--desktop">но <span class="nowrap nowrap--tablet">и местного производства!</span></span></p>
               </li>
               <li class="advantage__advice-item advantage__advice-item--food">
                 <h4 class="advantage__advice-title">Еда</h4>
-                <p class="advantage__advice-text">Всегда заказывайте фирменный бургер,<span class="advantage__advice-nowrap">Вы не разочаруетесь!</span></p>
+                <p class="advantage__advice-text">Всегда заказывайте фирменный бургер, <span class="nowrap nowrap--tablet">Вы не разочаруетесь!</span></p>
               </li>
             </ul>
           </li>
@@ -94,33 +97,37 @@
           <!-- advantage-1 -->
 
           <li class="advantages__item advantage advantage--reverse">
-            <div class="advantage__description advantage__description--main advantage__description--reverse">
-              <h3 class="advantage__title">Там есть <br>Мост дьявола</h3>
+            <div class="advantage__description advantage__description--have-image advantage__description--reverse">
+              <h3 class="advantage__title">Там есть&nbsp; <br>Мост дьявола</h3>
               <span class="advantage__number">— №2 —</span>
-              <p class="advantage__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="advantage__text">Да, по нему можно пройти! <span class="nowrap nowrap--desktop">Если вы осмелитесь, конечно</span></p>
             </div>
             <div class="advantage__image-container">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/advantages-2-desktop.webp 1x, img/advantages-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/advantages-2-tablet.webp 1x, img/advantages-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantages-2-mobile.webp 1x, img/advantages-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advantages-2-tablet.jpg 1x, img/advantages-2-tablet@2x.jpg 2x">
                 <img class="advantage__content-photo" src="img/advantages-2-mobile.jpg" srcset="img/advantages-2-mobile@2x.jpg"
                   alt="Фото - мост дьявола">
               </picture>
             </div>
-
           </li>
           <li class="advantages__item advantage advantage--reduced">
-              <h3 class="advantage__title">Небольшая <br> площадь</h3>
+              <h3 class="advantage__title">Небольшая&nbsp;  <br> площадь</h3>
               <span class="advantage__number">— №3 —</span>
               <p class="advantage__text">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantage advantage--reduced">
-              <h3 class="advantage__title">Красивая <br> дорога</h3>
+              <h3 class="advantage__title">Красивая&nbsp; <br> дорога</h3>
               <span class="advantage__number">— №4 —</span>
-              <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем <span class="advantage__text-nowrap">не скучно!</span></p>
+              <p class="advantage__text">Ехать в Седону из <span class="nowrap nowrap--tablet">Лас-Вегаса</span> совсем <span class="nowrap nowrap--tablet">не скучно!</span></p>
           </li>
           <li class="advantages__item advantage advantage--reduced">
-              <h3 class="advantage__title">Мало <br> туристов</h3>
+              <h3 class="advantage__title">Мало&nbsp; <br> туристов</h3>
               <span class="advantage__number">— №5 —</span>
               <p class="advantage__text">Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -144,45 +151,41 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__hashtag">#visitSEDONA</div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <span class="visually-hidden">Мы в Твиттере</span>
-                <svg class="social__link-icon" width="18" height="15">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
-
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__link-icon"  width="9" height="19" >
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
-                <span class="visually-hidden">Мы в Ютубе</span>
-                <svg class="social__link-icon" width="20" height="14"> <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация</span>
-            <svg class="copyright__link-icon" width="27" height="35">
-              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+      <div class="page-footer__hashtag">#visitSEDONA</div>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__link-icon" width="18" height="15">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
-        </div>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__link-icon"  width="9" height="19" >
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в Ютубе</span>
+            <svg class="social__link-icon" width="20" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация</span>
+          <svg class="copyright__link-icon" width="27" height="35">
+            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

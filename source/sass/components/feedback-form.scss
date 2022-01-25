@@ -4,7 +4,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 648px;
-
     padding-left: 60px;
     padding-right: 60px;
     margin: 0 auto;
@@ -20,11 +19,11 @@
 }
 
 .feedback-form__list {
+  position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 65px 20px 5px;
+  padding: 65px 20px 2px;
   border: none;
-  position: relative;
   border-top: 1px solid #e5e5e5;
   width: 100%;
 
@@ -39,7 +38,7 @@
     padding-left: 58px;
     padding-top: 55px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
 
     &::before {
       content: "";
@@ -54,12 +53,13 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
+    margin-bottom: 47px;
   }
 }
 
 .feedback-form__list--feeling {
   padding-top: 67px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     grid-area: 1/1/2/2;
@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 18px;
+    padding-top: 16px;
     margin-bottom: 31px;
   }
 
@@ -107,19 +107,19 @@
 
 .feedback-form__list--description {
   padding-top: 61px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     grid-area: 4/1/5/3;
     padding-top: 56px;
-    margin-bottom: 58px;
+    margin-bottom: 49px;
   }
 }
 
 .feedback-form__list--submit {
   border-top: 0;
   padding-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -137,12 +137,7 @@
 
 .feedback-form__checkbox-container {
   @media (min-width: $tablet-width) {
-    // display: grid;
-
-    // grid-template-columns: 1fr 1fr;
-    // grid-column-gap: 39px;
     padding-left: 95px;
-    // padding-right: 75px;
     padding-right: 35px;
     display: flex;
     flex-wrap: wrap;
@@ -160,13 +155,17 @@
 .feedback-form__title {
   position: absolute;
   left: 0;
-  top: 18px;
+  top: 20px;
   padding: 0;
   width: 100%;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  &--place {
+    top: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -234,7 +233,7 @@
   &--name {
     flex-wrap: nowrap;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   &--contacts {
@@ -310,7 +309,7 @@
 }
 
 .feedback-form__input {
-  padding: 19px 15px 15px;
+  padding: 20px 15px 15px;
   margin: 0;
 
   &--name {
@@ -322,6 +321,7 @@
     width: 100%;
     // padding-right: 58px;
     border-right: 0;
+    padding-left: 18px;
 
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -428,16 +428,24 @@
   padding-top: 10px;
   min-height: 160px;
   box-sizing: border-box;
-  resize: horizontal;
+  // resize: horizontal;
+  resize: none;
 }
 
 .feedback-form__submit {
   margin: 0 auto;
   width: 100%;
+  padding-top: 19px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 20px;
     margin: 0;
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
   }
 }
 

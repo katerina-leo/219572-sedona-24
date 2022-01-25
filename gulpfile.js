@@ -10,7 +10,8 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore'
+import svgstore from 'gulp-svgstore';
+import terser from 'gulp-terser';
 
 // Styles
 
@@ -36,6 +37,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
 }
