@@ -26,8 +26,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // padding-left: 60px;
-    // padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,11 +40,10 @@
   padding-right: 20px;
   padding-top: 22px;
   width: 100%;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $gray-color;
 
   @media (min-width: $tablet-width) {
     border-top: 0;
     padding: 0;
-    // padding-top: 25px;
   }
 }
