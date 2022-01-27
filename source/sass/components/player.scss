@@ -57,7 +57,6 @@
 
 .player__button {
   background-color: transparent;
-  // fill: $white;
   border: none;
   padding: 0;
 }
@@ -66,7 +65,7 @@
   margin-right: auto;
 }
 
-.player__volume {
+.player__slider {
   position: absolute;
   top: -45px;
   left: 0;
@@ -74,8 +73,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 22px 20px;
-  background-color: $black;
-  opacity: 0.6;
+  background-color: $player__interface-tablet;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -105,7 +103,7 @@
   opacity: 0.2;
 }
 
-.player__slider {
+.player__pointer {
   position: absolute;
   top: 50%;
   left: 56px;

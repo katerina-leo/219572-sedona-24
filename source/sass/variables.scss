@@ -1,8 +1,7 @@
-// Шрифт //
-
 $font-family: "PT Sans", "Arial", sans-serif;
 
-//Цвета//
+$box-shadow-desktop: rgba(0, 1, 1, 0.2);
+$bg-page-desktop: #f2f2f2;
 $white: #ffffff;
 $black: #000000;
 $bg-blue: #81b3d2;
@@ -17,20 +16,14 @@ $border-gray: #d6d6d6;
 $bg-photo-card-1: #f2f2f2;
 $bg-photo-card-2: #eaeaea;
 
-//Кнопки
-
-$bg-input-color: #f2f2f2;
+$bg-input-color: $bg-page-desktop;
 $bg-input-color-hover: $gray-color;
 $bg-input-color-active: #d5d5d5;
-
-// Видео //
 
 $player__interface-mobile: $bg-input-color;
 $player__interface-tablet: rgba($black, 0.6);
 $player-icon-mobile: #5c6870;
 $player-icon-mobile-hover: $text-color;
-
-//Размеры экранов//
 
 $mobile-width-only: 767px;
 $tablet-width: 768px;
